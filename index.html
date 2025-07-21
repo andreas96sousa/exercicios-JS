@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios JS</title>
+</head>
+<body>
+    <h1> 1.1 e 1.2) Faça um programa que exiba 3 números na tela.</h1>
+    <input type="number" name="" id="numero1" style="width: 50px; height: 30px;">
+    <input type="number" name="" id="numero2" style="width: 50px; height: 30px;">
+    <input type="number" name="" id="numero3" style="width: 50px; height: 30px;"> <br> <br>
+    <button onclick="exibirNumeros()"> EXIBIR NÚMEROS </button>
+    <p id="result1_1">...</p>
+    
+    <hr>
+
+    <h1> 1.3) Faça um programa que leia 3 números, some-os e exiba a média entre eles.</h1>
+    <input type="number" placeholder="Número 1" name="" id="n1" style="width: 50px; height: 30px; text-align: center;">
+    <input type="number" placeholder="Número 2" name="" id="n2" style="width: 50px; height: 30px; text-align: center;">
+    <input type="number" placeholder="Número 3" name="" id="n3" style="width: 50px; height: 30px; text-align: center;"> <br> <br>
+    <button onclick="calcularMedia()"> CALCULAR MÉDIA </button>
+    <p id="result1_3">...</p>
+
+
+
+
+
+
+
+
+    <script>
+        
+        function exibirNumeros(){
+            let num1 = Number(numero1.value)
+            let num2 = Number(numero2.value)
+            let num3 = Number(numero3.value)
+
+            result1_1.innerHTML = `Numero 1:  <b> ${num1} </b> <br>`
+            result1_1.innerHTML += `Numero 2:  <b> ${num2} </b> <br>`
+            result1_1.innerHTML += `Numero 3:  <b> ${num3} </b>`
+        }
+
+        function calcularMedia(){
+            let num1 = Number(n1.value)
+            let num2 = Number(n2.value)
+            let num3 = Number(n3.value)
+            let media = (num1+num2+num3)/3
+
+
+
+            result1_3.innerHTML = `Numero 1:  <b> ${num1} </b> <br>`
+            result1_3.innerHTML += `Numero 2:  <b> ${num2} </b> <br>`
+            result1_3.innerHTML += `Numero 3:  <b> ${num3} </b> <br>`
+            result1_3.innerHTML += `Soma:  <b> ${num1+num2+num3} </b> <br>`
+            result1_3.innerHTML += `Média:  <b> ${media} </b>`
+
+        }
+    </script>
+</body>
+</html>
